@@ -1,0 +1,18 @@
+@model IEnumerable<Order>
+
+@{
+    ViewData["Title"] = "Order Queue";
+}
+
+<h1>Order Queue</h1>
+
+@foreach (var order in Model)
+{
+    <div>
+        <h3>Order #@order.Id</h3>
+
+        <p>Item: @order.CocktailName</p>
+
+        <p>Date: @order.OrderDate</p>
+    </div>
+}

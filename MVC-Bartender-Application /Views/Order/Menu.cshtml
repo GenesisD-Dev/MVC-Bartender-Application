@@ -1,0 +1,30 @@
+@model IEnumerable<Cocktail>
+
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Menu</h1>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h3>@item.Name</h3>
+
+        <p>$@item.Price</p>
+
+        <form asp-controller="Order"
+              asp-action="PlaceOrder"
+              method="post">
+
+            <input type="hidden"
+                   name="cocktailId"
+                   value="@item.Id" />
+
+            <button type="submit">
+                Order
+            </button>
+
+        </form>
+    </div>
+}

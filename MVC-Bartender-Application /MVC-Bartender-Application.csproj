@@ -7,4 +7,11 @@
         <RootNamespace>MVC_Bartender_Application</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Menu\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Bartender\Queue.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Account\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Account\Register.cshtml" />
+    </ItemGroup>
+
 </Project>
