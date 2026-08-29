@@ -4,15 +4,19 @@
     ViewData["Title"] = "Order Queue";
 }
 
-<h1>Order Queue</h1>
+<div class="queue-page">
+    <h1>Order Queue</h1>
 
-@foreach (var order in Model)
-{
-    <div>
-        <h3>Order #@order.Id</h3>
+    <div class="orders">
+        @foreach (var order in Model)
+        {
+            <div class="order">
+                <h3>Order #@order.Id</h3>
 
-        <p>Item: @order.CocktailName</p>
+                <p>Item: @order.CocktailName</p>
 
-        <p>Date: @order.OrderDate</p>
+                <p>Date: @order.OrderDate</p>
+            </div>
+        }
     </div>
-}
+</div>

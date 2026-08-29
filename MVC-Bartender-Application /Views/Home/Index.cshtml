@@ -2,17 +2,21 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Welcome</h1>
+<div class="home-page">
+    <div class="home-page-header">
+        <h1>Welcome</h1>
+        <p>Select an option:</p>
+    </div>
 
-<p>Select an option:</p>
+    <div class="home-options">
+        <a class="home-option" asp-controller="Order" asp-action="Menu">
+            <strong>Menu:</strong>
+            <span>View a menu of cocktails and place an order</span>
+        </a>
 
-<a asp-controller="Order" asp-action="Menu">
-    Place an Order
-</a>
-
-<br />
-
-<a asp-controller="Order" asp-action="Queue">
-    Order Queue
-</a>
-
+        <a class="home-option" asp-controller="Order" asp-action="Queue">
+            <strong>Order Queue:</strong>
+            <span>List of cocktail orders</span>
+        </a>
+    </div>
+</div>

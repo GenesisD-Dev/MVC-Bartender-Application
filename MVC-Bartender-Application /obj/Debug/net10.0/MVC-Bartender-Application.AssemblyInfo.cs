@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVC-Bartender-Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c1c9866490b0651e199d62dbd01ad34b9d62cf1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ec1bcc5786580685c8932273095037d698b1d64")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVC-Bartender-Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVC-Bartender-Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,27 +4,24 @@
     ViewData["Title"] = "Menu";
 }
 
-<h1>Menu</h1>
+<div class="menu-page">
+    <h1>Menu</h1>
 
-@foreach (var item in Model)
-{
-    <div>
-        <h3>@item.Name</h3>
+    <div class="cocktails">
+        @foreach (var item in Model)
+        {
+            <div class="cocktail">
+                <h3>@item.Name</h3>
+                <p>$@item.Price.ToString("F2")</p>
 
-        <p>$@item.Price</p>
+                <form class="order-form" asp-controller="Order" asp-action="PlaceOrder" method="post">
 
-        <form asp-controller="Order"
-              asp-action="PlaceOrder"
-              method="post">
+                    <input type="hidden" name="cocktailId" value="@item.Id" />
 
-            <input type="hidden"
-                   name="cocktailId"
-                   value="@item.Id" />
+                    <button class="order-button" type="submit"> Order </button>
 
-            <button type="submit">
-                Order
-            </button>
-
-        </form>
+                </form>
+            </div>
+        }
     </div>
-}
+</div>

@@ -8,10 +8,7 @@ builder.Services.AddControllersWithViews();
 
 // Add database
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-
-    options.UseSqlite(
-
-        builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite("Data Source=orders.db"));
 
 var app = builder.Build();
 
